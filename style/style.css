@@ -1,0 +1,12 @@
+
+
+body
+{
+  text-align: center;
+  padding: 100px;
+  margin: 0;
+  background-image: url("https://images.pexels.com/photos/260405/pexels-photo-260405.jpeg");
+  background-size: cover;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+}
