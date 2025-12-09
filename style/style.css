@@ -1,12 +1,129 @@
-
-
-body
-{
-  text-align: center;
-  padding: 100px;
+body, html, header{
   margin: 0;
-  background-image: url("https://images.pexels.com/photos/260405/pexels-photo-260405.jpeg");
-  background-size: cover;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 20px;
+}
+
+
+a{
+  font-family: "brother-1816", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  color:#780116;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;  
+    padding: 8px 8px 8px 32px;
+}
+
+
+
+.primary_button{
+  background-color: #780116;
+  color: #F5F1DC !important;
+  border: none;
+  margin: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 32px;
+  padding:10px !important;
+}
+
+/* Side menu*/
+.sidepanel {
+  height: 100%; 
+  width: 70%; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0;
+  right: 0;
+  background-color: #F5F1DC; 
+  overflow-x: hidden; 
+  padding-top: 80px; 
+  transition: 0.5s; 
+ 
+}
+.sidepanel a {
+  text-decoration: none;
+  color:#780116;
+  display: block;
+  transition: 0.3s;    
+}
+.sidepanel a:hover {
+  color: #E36414;
+}
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 50px;
+  margin-left: 80px;
+  padding-top:12px;
+}
+.openbtn {
+  position: fixed;
+   top: 20px;
+    right: 20px;  
+  font-size: 32px;
+  font-weight: 900;
+  cursor: pointer;
+  background-color: #F5F1DC;
+  color: #780116;
+  padding: 5px;
+  border: none;
+
+}
+.openbtn:hover {
+  background-color: #444;
+}
+
+
+
+/* Phone */ 
+@media (max-width: 400px) {
+  header {
+    background-color: #F5F1DC;
+    margin:0px;
+  }
+  .logo {
+    width: 50%
+  } 
+  .mainmenu {
+    display: none; 
+    visibility: hidden; 
+  }
+  .openbtn {
+    display:inline-block
+}
+}
+/* tablet */ 
+@media (min-width: 400px) {
+  header {
+    background-color: #1193d5;
+  }
+  .logo {
+    width: 50%
+  } 
+  .sidepanel, .openbtn {
+    display: none; 
+    visibility: hidden; 
+  } 
+  .mainmenu {
+    display: flex;
+  }
+}
+
+/* Desktop */ 
+@media (min-width: 742px) {
+  header {
+    background-color: #b2960b;
+  }
+  .logo {
+    width: 50%
+  } 
+  .sidepanel {
+    display: none; 
+    visibility: hidden; 
+  }
 }

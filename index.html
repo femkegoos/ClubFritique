@@ -1,20 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="https://use.typekit.net/gzy4lsz.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
+
+	<title>Document</title>
 </head>
 <body>
+	<header>
+		
+		<img class="logo" src="img/logo_club_fritique.svg" alt="Logo"></img>
+		<!--Mobile menu-->
+	<div id="mySidepanel" class="sidepanel">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#">Home</a>
+		<a href="#">Over</a>
+		<a href="#">Events</a>
+		<a class="primary_button" href="#">Registreer</a>
+	</div><button class="openbtn" onclick="openNav()">&#9776;</button>
 
-<div class="hero">
-    <h1>Welcome to Korean Skincare,</h1> 
-    <h3> You are logged in. You can now add products! You can log out anytime you want!</h3>
-    <br><br>
-    <a href="logout.php" class="btn">Logout</a> 
-        <h1>Welcome to Korean Skincare!</h1> <br>
-      <a href="login.php" class="btn">Log in</a> 
-</div>
-  </body>
+	<!--desktop menu-->
+	<div class="mainmenu">
+		<a href="#">Home</a>
+		<a href="#">Over</a>
+		<a href="#">Events</a>
+		<a class="primary_button" href="#">Registreer</a>
+	</div>
+
+</header>
+
+	<script src="script.js" charset="utf-8"></script>
+
+</body>
+
 </html>
