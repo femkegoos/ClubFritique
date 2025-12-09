@@ -34,7 +34,7 @@ p{
 }
 
 .hero{
-  padding-top: 32px;
+  padding-top: 40px;
 }
 h1{
   font-family: "Galada";
@@ -51,6 +51,43 @@ h1{
   padding: 0px;
   margin:30px 0px 0px 0px !important;
 } 
+
+.illustrations{
+  position: absolute;
+  padding: top 0px !important;
+  padding-left:50%;
+  width:150px;
+}
+
+.snack1{
+  position: absolute;
+  left:270px;
+  width:60px;
+  top:15px;
+}
+.snack2{
+  position: absolute;
+  left:220px;
+  top:0px;
+  width:60px;
+}
+.snack3{
+  position: absolute;
+    left:260px;
+  top:-40px;
+  width:50px;
+ 
+}
+.snack4{
+  position: absolute;
+  
+   left:190px;
+  top:-40px;
+  width:50px;
+  
+  
+}
+
 
 .primary_button{
   background-color: #780116;
