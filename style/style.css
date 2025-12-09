@@ -79,7 +79,7 @@ h1{
 /* Side menu*/
 .sidepanel {
   height: 100%; 
-  width: 70%; 
+  width: 0%; 
   position: fixed; 
   z-index: 1; 
   top: 0;
@@ -87,7 +87,7 @@ h1{
   background-color: #F5F1DC; 
   overflow-x: hidden; 
   padding-top: 80px; 
-  transition: 0.5s; 
+  transition: 0.5s;
  
 }
 .sidepanel a {
