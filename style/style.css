@@ -1,105 +1,108 @@
-body, html{
+body,
+html {
   margin: 0;
   max-width: 100%;
-   overflow-x: hidden;
+  overflow-x: hidden;
 }
- header {
-    background-color: #F5F1DC;
-    margin:0px;
-     position: fixed;
-      top: 0;
+
+header {
+  background-color: #F5F1DC;
+  margin: 0px;
+  position: fixed;
+  top: 0;
   z-index: 10;
   width: 100%;
-  }
+}
 
-a{
+a {
   font-family: "brother-1816", sans-serif;
   font-weight: 400;
   font-style: normal;
   margin: 0;
   padding: 0;
-  color:#780116;
+  color: #780116;
   text-decoration: none;
   font-size: 25px;
   display: block;
-  transition: 0.3s;  
+  transition: 0.3s;
   padding: 8px 8px 8px 32px;
 }
-p{
+
+p {
   font-family: "brother-1816", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
-  color:#102022 !important;
+  color: #102022 !important;
   line-height: 30px;
-  padding-bottom:10px;
+  padding-bottom: 10px;
 
 }
 
 
-.content{
+.content {
   margin: 20px;
-  padding-top:100px;
-  
+  padding-top: 100px;
+
 }
 
-.hero{
+.hero {
   padding-top: 40px;
 }
-h1{
+
+h1 {
   font-family: "Galada";
   font-style: normal;
   line-height: 60px;
-  color:#102022 !important;
-    font-weight: 400;
+  color: #102022 !important;
+  font-weight: 400;
 }
 
-.hero_title{
+.hero_title {
   font-style: normal;
   font-size: 60px;
-  color:#780116;
+  color: #780116;
   padding: 0px;
-  margin:30px 0px 0px 0px !important;
-} 
+  margin: 30px 0px 0px 0px !important;
+}
 
-.illustrations{
+.illustrations {
   position: absolute;
   padding: top 0px !important;
-  left: 40px;
+  margin-left:5vw;
+  height: auto;
   z-index: 1;
 }
 
-.snack1{
+.illustrations img{
   position: absolute;
-  left:270px;
-  width:60px;
-  top:15px;
+  width: 15vw;
+
+  }
+
+.snack1 {
+  left: 70vw;
+  height: auto;
+  top: 15px;
 }
-.snack2{
-  position: absolute;
-  left:220px;
-  top:0px;
-  width:60px;
+
+.snack2 {
+  left: 57vw;
+  top: 0px;
 }
-.snack3{
-  position: absolute;
-    left:260px;
-  top:-40px;
-  width:50px;
- 
+
+.snack3 {
+  left: 66vw;
+  top: -40px;
 }
-.snack4{
-  position: absolute;
-  
-   left:190px;
-  top:-40px;
-  width:50px;
-  
-  
+
+.snack4 {
+  left: 50vw;
+  top: -40px;
 }
 
 
-.primary_button{
+.primary_button {
   background-color: #780116;
   color: #F5F1DC !important;
   border: none;
@@ -107,11 +110,11 @@ h1{
   text-align: center;
   text-decoration: none;
   border-radius: 32px;
-  padding:10px 25px 10px 25px !important;
-  margin-top:20px;
+  padding: 10px 25px 10px 25px !important;
+  margin-top: 20px;
 }
 
-.secondary_button{
+.secondary_button {
   background-color: transparent;
   color: #780116 !important;
   border: 3px solid #780116;
@@ -119,45 +122,49 @@ h1{
   text-align: center;
   text-decoration: none;
   border-radius: 32px;
-  padding:10px 25px 10px 25px !important;
-  margin-top:20px;
+  padding: 10px 25px 10px 25px !important;
+  margin-top: 20px;
 }
 
 /* Side menu*/
 .sidepanel {
-  height: 100%; 
-  width: 0%; 
-  position: fixed; 
-  z-index: 1; 
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  z-index: 1;
   top: 0;
   right: 0;
-  background-color: #F5F1DC; 
-  overflow-x: hidden; 
-  padding-top: 80px; 
+  background-color: #F5F1DC;
+  overflow-x: hidden;
+  padding-top: 80px;
   transition: 0.5s;
- 
+
 }
+
 .sidepanel a {
   text-decoration: none;
-  color:#780116;
+  color: #780116;
   display: block;
-  transition: 0.3s;    
+  transition: 0.3s;
 }
+
 .sidepanel a:hover {
   color: #E36414;
 }
+
 .sidepanel .closebtn {
   position: absolute;
   top: 0;
   right: 20px;
   font-size: 50px;
   margin-left: 80px;
-  padding-top:12px;
+  padding-top: 12px;
 }
+
 .openbtn {
   position: absolute;
-   top: 20px;
-    right: 20px;  
+  top: 20px;
+  right: 20px;
   font-size: 32px;
   font-weight: 900;
   cursor: pointer;
@@ -167,69 +174,116 @@ h1{
   border: none;
 
 }
+
 .openbtn:hover {
   background-color: #444;
 }
 
 .mainmenu {
-     display: flex;      
-    gap: 20px; 
-    align-items: center;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Phone */
+@media (max-width: 768px) {
+
+  .logo {
+    width: 50%
   }
 
-/* Phone */ 
-@media (max-width: 768px) {
- 
-  .logo {
-    width: 50%
-  } 
   .mainmenu {
-    display: none; 
-    visibility: hidden; 
-  }
-  .openbtn {
-    display:inline-block
-}
-}
-/* tablet */ 
-@media (min-width: 768px) and (max-width: 992px)  {
-  
-  .logo {
-    width: 50%
-  } 
-  .openbtn {
-    display:inline-block
-  } 
-  .mainmenu {
-     display: none;
+    display: none;
     visibility: hidden;
   }
-  
-.content{
-  padding-top:180px;
-  
-}
-  
+
+  .openbtn {
+    display: inline-block
+  }
 }
 
-/* Desktop */ 
+/* tablet */
+@media (min-width: 768px) and (max-width: 992px) {
+
+  .logo {
+    width: 50%
+  }
+
+  .openbtn {
+    display: inline-block
+  }
+
+  .mainmenu {
+    display: none;
+    visibility: hidden;
+  }
+
+  .content {
+    padding-top: 200px;
+  }
+  .hero_title {
+  font-size: 90px;
+  line-height: 90px;
+}
+.illustrations img{
+  position: absolute;
+  width: 10vw;
+
+  }
+
+.illustrations {
+  position: absolute;
+  padding: top 0px !important;
+  margin-left:10vw;
+  margin-top:40px;
+  height: auto;
+  z-index: 1;
+}
+.snack1 {
+  left: 70vw;
+  height: auto;
+  top: 20px;
+}
+
+.snack2 {
+  left: 57vw;
+  top: 20px;
+}
+
+.snack3 {
+  left: 66vw;
+  top: -40px;
+}
+
+.snack4 {
+  left: 50vw;
+  top: -40px;
+}
+
+}
+
+/* Desktop */
 @media (min-width: 992px) {
- 
+
   .logo {
     width: 30%
-  } 
-  .sidepanel, .openbtn {
-    display: none; 
-    visibility: hidden; 
   }
-  .content{
-  padding-top:300px;
-  
-}
-header {
+
+  .sidepanel,
+  .openbtn {
+    display: none;
+    visibility: hidden;
+  }
+
+  .content {
+    padding-top: 300px;
+
+  }
+
+  header {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* logo links – menu rechts */
+    justify-content: space-between; 
 
   }
 }
