@@ -1,7 +1,16 @@
-body, html, header{
+body, html{
   margin: 0;
+  max-width: 100%;
+   overflow-x: hidden;
 }
-
+ header {
+    background-color: #F5F1DC;
+    margin:0px;
+     position: fixed;
+      top: 0;
+  z-index: 10;
+  width: 100%;
+  }
 
 a{
   font-family: "brother-1816", sans-serif;
@@ -30,6 +39,7 @@ p{
 
 .content{
   margin: 20px;
+  padding-top:100px;
   
 }
 
@@ -55,8 +65,8 @@ h1{
 .illustrations{
   position: absolute;
   padding: top 0px !important;
-  padding-left:50%;
-  width:150px;
+  left: 40px;
+  z-index: 1;
 }
 
 .snack1{
@@ -97,7 +107,7 @@ h1{
   text-align: center;
   text-decoration: none;
   border-radius: 32px;
-  padding:10px !important;
+  padding:10px 25px 10px 25px !important;
   margin-top:20px;
 }
 
@@ -109,7 +119,7 @@ h1{
   text-align: center;
   text-decoration: none;
   border-radius: 32px;
-  padding:10px !important;
+  padding:10px 25px 10px 25px !important;
   margin-top:20px;
 }
 
@@ -145,7 +155,7 @@ h1{
   padding-top:12px;
 }
 .openbtn {
-  position: fixed;
+  position: absolute;
    top: 20px;
     right: 20px;  
   font-size: 32px;
@@ -161,14 +171,15 @@ h1{
   background-color: #444;
 }
 
-
+.mainmenu {
+     display: flex;      
+    gap: 20px; 
+    align-items: center;
+  }
 
 /* Phone */ 
-@media (max-width: 400px) {
-  header {
-    background-color: #F5F1DC;
-    margin:0px;
-  }
+@media (max-width: 768px) {
+ 
   .logo {
     width: 50%
   } 
@@ -181,32 +192,44 @@ h1{
 }
 }
 /* tablet */ 
-@media (min-width: 400px) {
-  header {
-    background-color: #1193d5;
-  }
+@media (min-width: 768px) and (max-width: 992px)  {
+  
   .logo {
     width: 50%
+  } 
+  .openbtn {
+    display:inline-block
+  } 
+  .mainmenu {
+     display: none;
+    visibility: hidden;
+  }
+  
+.content{
+  padding-top:180px;
+  
+}
+  
+}
+
+/* Desktop */ 
+@media (min-width: 992px) {
+ 
+  .logo {
+    width: 30%
   } 
   .sidepanel, .openbtn {
     display: none; 
     visibility: hidden; 
-  } 
-  .mainmenu {
-    display: flex;
   }
+  .content{
+  padding-top:300px;
+  
 }
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* logo links – menu rechts */
 
-/* Desktop */ 
-@media (min-width: 742px) {
-  header {
-    background-color: #b2960b;
-  }
-  .logo {
-    width: 50%
-  } 
-  .sidepanel {
-    display: none; 
-    visibility: hidden; 
   }
 }
