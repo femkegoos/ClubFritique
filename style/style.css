@@ -38,8 +38,23 @@ p {
   padding-bottom: 10px;
 
 }
+h1 {
+  font-family: "Galada";
+  font-style: normal;
+  line-height: 20px;
+  color: #102022 !important;
+  font-weight: 400;
+  font-size: 40px;
+}
+h2{
+  font-family: "Galada";
+  font-style: normal;
+  line-height: 20px;
+  color: #102022 !important;
+  font-weight: 400;
+}
 
-
+/* Hero banner styling */
 .content {
   margin: 20px;
   padding-top: 100px;
@@ -49,21 +64,13 @@ p {
 .hero {
   padding-top: 40px;
 }
-
-h1 {
-  font-family: "Galada";
-  font-style: normal;
-  line-height: 60px;
-  color: #102022 !important;
-  font-weight: 400;
-}
-
 .hero_title {
   font-style: normal;
   font-size: 60px;
   color: #780116;
   padding: 0px;
   margin: 30px 0px 0px 0px !important;
+  line-height: 60px;
 }
 
 .illustrations {
@@ -101,6 +108,13 @@ h1 {
   top: -40px;
 }
 
+.over{
+  padding-top:64px;
+}
+.over img{
+  width:99%;
+  border:3px solid #780116;
+}
 
 .primary_button {
   background-color: #780116;
@@ -227,7 +241,7 @@ h1 {
 }
 .illustrations img{
   position: absolute;
-  width: 10vw;
+  width: 10w;
 
   }
 
@@ -266,7 +280,7 @@ h1 {
 @media (min-width: 992px) {
 
   .logo {
-    width: 30%
+    width: 1U 70%
   }
 
   .sidepanel,
