@@ -53,6 +53,13 @@ h2{
   color: #102022 !important;
   font-weight: 400;
 }
+h3{
+  font-family: "Galada";
+  font-style: normal;
+  line-height: 20px;
+  color: #102022 !important;
+  font-weight: 400;
+}
 
 /* Hero banner styling */
 .content {
@@ -116,6 +123,37 @@ h2{
   border:3px solid #780116;
 }
 
+.platform{
+  padding-top:32px;
+}
+
+.events {
+  padding-top: 40px;
+}
+.items{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+
+.item{
+  background-color: #102022;
+  border: solid 2px #102022;
+  border-radius: 16px;
+  padding: 5px;
+}
+
+.item p, .item h2, .item h3{
+  color: #F5F1DC !important;
+  padding-left:10px;
+}
+
+.item img{
+  width:98.5%;
+  border:3px solid #102022;
+  border-radius: 16px 16px 0px 0px;
+}
 .primary_button {
   background-color: #780116;
   color: #F5F1DC !important;
@@ -214,6 +252,7 @@ h2{
   .openbtn {
     display: inline-block
   }
+  
 }
 
 /* tablet */
@@ -300,4 +339,9 @@ h2{
     justify-content: space-between; 
 
   }
+  .items{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
 }
