@@ -62,14 +62,12 @@ h3{
 }
 
 /* Hero banner styling */
-.content {
-  margin: 20px;
-  padding-top: 100px;
 
-}
 
 .hero {
-  padding-top: 40px;
+  padding-top: 140px;
+  padding-bottom:32px;
+   margin: 20px;
 }
 .hero_title {
   font-style: normal;
@@ -116,7 +114,10 @@ h3{
 }
 
 .over{
-  padding-top:64px;
+  padding-top:32px !important;
+  background-color: #F5F1DC;
+  padding-bottom:32px !important;
+  padding: 20px;
 }
 .over img{
   width:99%;
@@ -128,7 +129,9 @@ h3{
 }
 
 .events {
-  padding-top: 64px;
+   padding-top:32px !important;
+  padding-bottom:32px !important;
+  padding: 20px;
 }
 .items{
   display: grid;
@@ -296,10 +299,24 @@ form{
 }
 
 .merch{
-  padding-top:64px;
+   padding-top:32px !important;
+  background-color: #F5F1DC;
+  padding-bottom:32px !important;
+  padding: 20px;
+
 }
 .registreer{
-  padding-top:64px;
+   padding-top:32px !important;
+  padding-bottom:32px !important;
+  padding: 20px;
+}
+
+footer{
+  background-color: #F5F1DC;
+  color: #780116 !important;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
 }
 
 /* Phone */
