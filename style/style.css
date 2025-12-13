@@ -592,11 +592,6 @@ display: inline-block;
     visibility: hidden;
   }
 
-  .hero {
-    padding-top: 300px;
-
-  }
-
  header .containerDesktop  {
     display: flex;
     align-items: center;
@@ -604,9 +599,130 @@ display: inline-block;
 
   }
 
+  .hero {
+    padding-top: 240px;
+    padding-bottom: 64px;
+
+  }
+  .hero a {
+    display: inline-block;
+    margin-right: 20px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    margin-left: 0px !important;
+
+  }
+  
+  .illustrations img {
+    position: absolute;
+    width: 10vw;
+  }
+
+  .illustrations {
+    position: absolute;
+    padding: top 0px !important;
+    margin-left: 10vw;
+    margin-top: 40px;
+    height: auto;
+    z-index: 1;
+  }
+
+  .snack1 {
+    left: 55vw;
+    height: auto;
+    top: 0px;
+  }
+
+  .snack2 {
+    left: 47vw;
+    top: -230px;
+  }
+
+  .snack3 {
+    left: 36vw;
+    top: -60px;
+  }
+
+  .snack4 {
+    left: 24vw;
+    top: -185px;
+  }
+
+    h1 {
+    font-size: 60px;
+    line-height: 50px;
+  }
+
+  h2 {
+    font-size: 30px;
+
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+  .hero_title {
+    font-size: 130px;
+    line-height: 140px;
+  }
+  .over{
+     display: flex !important;
+  flex-direction: row !important ;
+  align-items: center !important;
+  }
+  .wijZijn p{
+    min-width: 600px !important;
+    text-align: left !important;
+      padding-right:70px;
+  }
+  .wijZijn img {
+    width: 35% !important;
+    margin-left: 40px !important;
+  }
+.wijZijn{
+      display: flex !important;
+    flex-direction: row !important ;
+    align-items: top !important;
+}
+.platform{
+      display: flex !important;
+    flex-direction: row !important ;
+    align-items: top !important;
+}
+  .platform p{
+    min-width: 600px !important;
+    text-align: left !important;
+    padding-right:70px;
+  }
+  .platform img {
+    width: 35% !important;
+    margin-left: 40px !important;
+  }
+
+  .over a{
+    display: inline-block;
+    margin-left: 0px !important;
+    padding-right: 25px !important; 
+  }
+  .over {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+  }
+
+  .events {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+  }
+
+    .events a{
+    display: inline-block;
+    margin-left: 0px !important;
+    padding-right: 25px !important; 
+  }
   .items {
     display: flex;
     gap: 20px;
-    align-items: center;
+    align-items: stretch;
+    margin-bottom:60px;
   }
 }
