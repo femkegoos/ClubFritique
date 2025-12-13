@@ -28,7 +28,7 @@ a {
   padding: 8px 8px 8px 32px;
 }
 
-p {
+p, label {
   font-family: "brother-1816", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -128,7 +128,7 @@ h3{
 }
 
 .events {
-  padding-top: 40px;
+  padding-top: 64px;
 }
 .items{
   display: grid;
@@ -155,6 +155,7 @@ h3{
   border-radius: 16px 16px 0px 0px;
 }
 .primary_button {
+  font-size: 20px;
   background-color: #780116;
   color: #F5F1DC !important;
   border: none;
@@ -167,6 +168,8 @@ h3{
 }
 
 .secondary_button {
+  font-size: 20px;
+
   background-color: transparent;
   color: #780116 !important;
   border: 3px solid #780116;
@@ -274,7 +277,30 @@ h3{
   text-align: center;
   min-width: 100%;
 }
+input{
+  font-family: "brother-1816", sans-serif;
+  font-size: 16px;
+  padding: 8px;
+  margin-bottom: 40px;
+  border:0px;
+  border-bottom: 2px solid #780116;
+  width: 80%;
+  height: 10px;
+}
 
+form{
+  border: solid 2px #780116;
+  border-radius: 16px;
+  padding: 15px;
+  margin-top:50px;
+}
+
+.merch{
+  padding-top:64px;
+}
+.registreer{
+  padding-top:64px;
+}
 
 /* Phone */
 @media (max-width: 768px) {
@@ -293,6 +319,7 @@ h3{
   }
   
 }
+
 
 /* tablet */
 @media (min-width: 768px) and (max-width: 992px) {
