@@ -24,11 +24,21 @@ dots.forEach((dot, i) => {
   });
 });
 
-// automatische sliding
-setInterval(() => {
+// Init eerste slide
+moveToSlide(index);
+
+// Automatische sliding
+let autoSlide = setInterval(() => {
   index = (index + 1) % slideCount;
   moveToSlide(index);
 }, 6000);
 
-// Init eerste slide
-moveToSlide(index);
+// Hover pauze
+const carousel = document.querySelector('.carousel');
+carousel.addEventListener('mouseenter', () => clearInterval(autoSlide));
+carousel.addEventListener('mouseleave', () => {
+  autoSlide = setInterval(() => {
+    index = (index + 1) % slideCount;
+    moveToSlide(index);
+  }, 6000);
+});
