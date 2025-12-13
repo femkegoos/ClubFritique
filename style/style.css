@@ -237,6 +237,47 @@ h3{
   align-items: center;
 }
 
+.carousel {
+  max-width: 600px;
+  margin: auto;
+   overflow: hidden;
+}
+.carousel-track {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.Slides img {
+  margin: 20px;
+  width: 50%;
+  display: block;
+
+
+       }
+.Slides {
+  text-align: center;
+  min-width: 100%;
+}
+
+
 /* Phone */
 @media (max-width: 768px) {
 
