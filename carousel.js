@@ -6,22 +6,22 @@ const slideCount = slides.length;
 
 // Slide verplaatsen
 function moveToSlide(idx) {
-  track.style.transform = `translateX(-${idx * 100}%)`;
-  updateDots(idx);
+    track.style.transform = `translateX(-${idx * 100}%)`;
+    updateDots(idx);
 }
 
 // Dots updaten
 function updateDots(idx) {
-  dots.forEach(dot => dot.classList.remove('active'));
-  if(dots[idx]) dots[idx].classList.add('active');
+    dots.forEach(dot => dot.classList.remove('active'));
+    if (dots[idx]) dots[idx].classList.add('active');
 }
 
 // Dots klikbaar maken
 dots.forEach((dot, i) => {
-  dot.addEventListener('click', () => {
-    index = i;
-    moveToSlide(index);
-  });
+    dot.addEventListener('click', () => {
+        index = i;
+        moveToSlide(index);
+    });
 });
 
 // Init eerste slide
@@ -29,16 +29,16 @@ moveToSlide(index);
 
 // Automatische sliding
 let autoSlide = setInterval(() => {
-  index = (index + 1) % slideCount;
-  moveToSlide(index);
+    index = (index + 1) % slideCount;
+    moveToSlide(index);
 }, 6000);
 
 // Hover pauze
 const carousel = document.querySelector('.carousel');
 carousel.addEventListener('mouseenter', () => clearInterval(autoSlide));
 carousel.addEventListener('mouseleave', () => {
-  autoSlide = setInterval(() => {
-    index = (index + 1) % slideCount;
-    moveToSlide(index);
-  }, 6000);
+    autoSlide = setInterval(() => {
+        index = (index + 1) % slideCount;
+        moveToSlide(index);
+    }, 6000);
 });
